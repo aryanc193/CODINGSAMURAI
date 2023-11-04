@@ -6,11 +6,11 @@ body {
   font-family: "Poppins";
   background-color: #535353;
   overflow: hidden;
+  overflow-y: auto;
 }
-
 .button {
-  width: 90px;
-  height: 90px;
+  width: 69px;
+  height: 69px;
   margin: 0 3px;
   border: 2px solid #10B3F5;
   border-radius: 9px;
@@ -37,9 +37,9 @@ body {
 }
 
 .row input {
-  width: 399px;
-  height: 50px;
-  font-size: 40px;
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
   margin: 0;
   padding: 10px 0px;
   border: 2px solid #10B3F5;
@@ -50,7 +50,7 @@ body {
 .text-center {
   text-align: center;
   color: #10B3F5;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .bg-red {
