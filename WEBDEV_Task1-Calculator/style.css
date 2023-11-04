@@ -24,6 +24,8 @@ body {
 
 .diffcolor {
   background-color: #10B3F5;
+  color: white;
+  font-size: 35px;
 }
 .diffcolor:active {
   background-color: rgb(0, 255, 149);
