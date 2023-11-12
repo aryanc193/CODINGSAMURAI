@@ -59,7 +59,8 @@ html, body{
     padding-left: 5px;
     text-align: left;
     border-radius: 10px;
-    
+    overflow: auto;
+   margin-bottom: 20px;
   }
 
   .hpdiv ul li, .mpdiv ul li, .lpdiv ul li, .donediv ul li{
@@ -88,7 +89,7 @@ html, body{
   .fa-trash{
     margin-left: 15px;
   }
-  
+
 
  .dialog {
   display: none;
@@ -116,7 +117,7 @@ html, body{
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
-  
+
 }
 
 .dialog-content #closeDialog, #dropdown, #doneDialog{
@@ -138,7 +139,7 @@ select {
 .container {
   width: 90%;
   margin-left: 25%;
-  max-width: 800px; /* Set a maximum width for larger screens */
+  max-width: 800px;
   padding: 33px;
   text-align: center;
   background-color: #0e0e0e;
@@ -149,7 +150,7 @@ select {
 
 input {
   width: 85%;
-  max-width: 700px; /* Set a maximum width for larger screens */
+  max-width: 700px; 
   height: 35px;
   padding: 10px;
   border: 2px solid rgb(255, 238, 0);
@@ -187,7 +188,7 @@ button {
 }
 
 .hpdiv, .mpdiv, .lpdiv, .donediv {
-  width: 20%; /* Adjust as needed */
+  width: 20%; 
   height: fit-content;
   background-color: rgb(65, 64, 64);
   color: rgb(255, 255, 255);
@@ -206,22 +207,10 @@ button {
   font-weight: 500;
   margin-left: -30%;
   margin-right: -5%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.fa-solid {
-  color: black;
-}
-
-.fa-caret-down {
-  margin-left: auto;
-}
-
-.fa-trash {
-  margin-left: 15px;
 }
 
 .dialog {
@@ -247,7 +236,7 @@ button {
   margin-top: 10%;
   margin-left: 40%;
   width: 70%;
-  max-width: 400px; /* Set a maximum width for larger screens */
+  max-width: 400px; 
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -262,6 +251,4 @@ select {
   padding: 10px;
   margin: 10px 0;
 }
-
-
 }
