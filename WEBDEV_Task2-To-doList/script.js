@@ -55,27 +55,18 @@ function addTaskToList(taskText, selectedPriority) {
 }
 
 function updatePriority(taskElement, selectedPriority) {
-  let taskList;
-  switch (selectedPriority) {
-    case "highpriopt":
-      taskList = document.querySelector(".hptasks");
-      break;
-    case "midpriopt":
-      taskList = document.querySelector(".mptasks");
-      break;
-    case "lowpriopt":
-      taskList = document.querySelector(".lptasks");
-      break;
-    case "donepriopt":
-      taskList = document.querySelector(".done");
-      break;
-    default:
-      return;
-  }
+  let taskText = taskElement.textContent.trim().replace("🗑", "").replace("🔽", "");
 
+  // Remove the existing task
   taskElement.remove();
-  taskList.appendChild(taskElement);
+
+  // Add the task as a new one with the updated priority
+  addTaskToList(taskText, selectedPriority);
+
+  // Save tasks to local storage
+  saveTasksToLocalStorage();
 }
+
 
 function removeTask() {
   this.parentNode.remove();
@@ -83,9 +74,17 @@ function removeTask() {
 }
 
 function openDialog() {
+  // Remove the 'selected-task' class from all tasks
+  document.querySelectorAll(".taskslist ul li").forEach((taskElement) => {
+    taskElement.classList.remove("selected-task");
+  });
+
+  // Set the input value and show the dialog
   let taskText = this.parentNode.textContent.trim().replace("🗑", "").replace("🔽", "");
   inputs.value = taskText;
   document.getElementById("dialog").style.display = "block";
+
+  // Add the 'selected-task' class to the current task
   this.parentNode.classList.add("selected-task");
 }
 
