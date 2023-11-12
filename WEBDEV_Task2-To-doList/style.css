@@ -84,10 +84,10 @@ html, body{
     color: black;
   }
   .fa-caret-down{
-    margin-left: auto;
+    margin-left: 15px;
   }
   .fa-trash{
-    margin-left: 15px;
+    margin-left: auto;
   }
 
 
